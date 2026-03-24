@@ -1,0 +1,69 @@
+\documentclass[12pt,a4paper]{article}
+
+% --- Paquetes ---
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{parskip}
+\usepackage{hyperref}
+
+% --- Configuración de página ---
+\geometry{margin=2.5cm}
+\onehalfspacing
+
+\csname title\endcsname{Sumativa 1}
+\author{Juan Pablo Cuevas\\Ética para Ciencia de Datos y Estadística}
+
+\begin{document}
+
+\maketitle
+
+\section{Introducción}
+Este informe sociotécnico analiza el sistema de remuneración de Spotify como un problema moral de justicia distributiva en plataformas digitales. El foco está en la relación entre diseño técnico (modelo \textit{pro-rata}, playlists y recomendación algorítmica) y sus consecuencias sociales sobre visibilidad, ingresos y poder dentro del ecosistema musical.
+
+La tesis central es que el conflicto no se reduce a una discusión de eficiencia económica, sino que involucra una pregunta normativa: \textit{qué forma de distribución respeta mejor el valor que los usuarios realmente entregan a la música y limita el poder discrecional de la plataforma}.
+
+\section{Descripción técnica}
+El sistema analizado corresponde a la plataforma de \textit{streaming} Spotify, cuyo propósito técnico-comercial es distribuir música digital a gran escala y monetizarla a través de suscripciones y publicidad.
+
+En términos de arquitectura y componentes, la solución se compone, de manera simplificada, de tres capas. Primero, la \textbf{captura de consumo}, que registra reproducciones (\textit{streams}) por pista, artista, playlist y tipo de interacción. Segundo, el \textbf{motor de recomendación y playlists}, integrado por sistemas algorítmicos y curatoriales que ordenan visibilidad y tráfico. Tercero, el \textbf{módulo de liquidación}, encargado del cálculo y distribución de royalties según reglas contractuales y modelo de reparto.
+
+A nivel funcional, el flujo general considera: captura de escucha, agregación de datos, priorización de contenidos en interfaces (por ejemplo, playlists) y posterior cálculo de pagos.
+
+Respecto de requerimientos y limitaciones, en términos funcionales el sistema requiere trazabilidad de reproducciones, cálculo reproducible de pagos y mecanismos de auditoría. En términos no funcionales, exige escalabilidad, disponibilidad, seguridad de datos, transparencia y explicabilidad de la recomendación. Al mismo tiempo, enfrenta limitaciones técnicas y de diseño, entre ellas la opacidad algorítmica, la asimetría de información entre plataforma y artistas, y los incentivos a optimizar costo por reproducción.
+
+Finalmente, en el modelo de remuneración \textit{pro-rata}, los ingresos por suscripciones se agregan a una bolsa común y luego se distribuyen proporcionalmente al total de \textit{streams} de cada artista (Lei). En términos simplificados, si $S_i$ son los \textit{streams} del artista $i$ y $\sum_j S_j$ es el total de reproducciones, entonces su fracción de pago es:
+
+$$
+\mathrm{Pago}_i \propto \frac{S_i}{\sum_j S_j}
+$$
+
+Esto implica que la remuneración depende del peso relativo en el sistema completo, no del vínculo directo entre la suscripción de una persona y los artistas que esa persona escucha.
+
+Como consecuencia técnica, cualquier mecanismo que aumente artificialmente los \textit{streams} de ciertos catálogos (por ejemplo, mediante fuerte promoción en playlists) altera la distribución de pagos del resto del sistema.
+
+\section{Análisis social}
+La discusión social del caso puede leerse como un argumento moral sobre distribución y poder. En el esquema \textit{pro-rata}, descrito por Lei, todas las suscripciones se agregan a una bolsa común, Spotify retiene una parte considerable y el resto se reparte según la proporción total de \textit{streams} de cada artista. Jakob describe este mecanismo como una ``lucha por la cuota de mercado'': la remuneración ya no depende del nivel absoluto de ventas o reproducciones de cada artista, sino de su posición relativa frente al total de música reproducida.
+
+En ese contexto aparece el núcleo ético del problema. Si la plataforma puede empujar ciertos contenidos, entonces también puede alterar la distribución de ingresos del sistema completo. Jakob sostiene que aumentar artificialmente los \textit{streams} de algunos artistas reduce el pago de los demás. Esta preocupación se vuelve más fuerte al considerar que, según su análisis, cerca del 40\% de los \textit{streams} de Spotify provienen de fuentes programadas por la propia plataforma. Además, solo un número limitado de canciones entra en playlists de alto alcance, y los criterios que definen esa promoción son en gran medida opacos.
+
+El marco empírico descrito por Liz Pelly en \textit{Mood Machine} refuerza esta lectura. Spotify habría pagado alrededor del 70\% de sus ingresos en royalties, con problemas de rentabilidad. Como gran parte de la audiencia usa la aplicación como ``soundtrack de la vida'' (estudiar, trabajar, dormir o relajarse), la escucha pasiva se vuelve central para el negocio. Bajo ese incentivo, la pregunta práctica pasa a ser por qué pagar royalties altos cuando el usuario presta poca atención. Desde ahí se expande el \textit{Perfect Fit Content} (PFC), música diseñada para encajar en playlists funcionales, y aparecen \textit{ghost artists} sin identidad pública robusta fuera de la plataforma, orientados a producción masiva para listas genéricas (\textit{lofi}, \textit{ambient}, \textit{piano}).
+
+Normativamente, el punto clave es que un sistema de remuneración es más justo cuando refleja mejor el valor que las personas entregan realmente a la música. Ese valor no depende solo del número bruto de reproducciones, sino también del tipo de escucha: no equivale una elección activa de artista a una reproducción pasiva programada. Si ambas se tratan igual, el modelo tiende a sobre-premiar la circulación automatizada y a sub-reconocer la preferencia deliberada.
+
+Una objeción importante es que reemplazar \textit{pro-rata} por \textit{user-centric} no resolvería automáticamente el problema. De hecho, Lei argumenta que \textit{pro-rata} puede superar a \textit{user-centric} en eficiencia y en ciertos criterios de equidad igualitaria, y que el cambio podría ampliar brechas o reducir eficiencia. Esta objeción no derriba la tesis moral; al contrario, la afina: el problema principal no es solo la fórmula de reparto, sino la combinación entre fórmula y poder de programación de la plataforma.
+
+Los principales impactos y riesgos sociotécnicos se manifiestan en la \textbf{concentración de poder}, ya que la plataforma influye simultáneamente en descubrimiento musical y reparto económico; en el \textbf{desplazamiento cultural}, porque se favorece música optimizada para permanencia en playlists por sobre propuestas autorales; en un \textbf{sesgo estructural} que deja a artistas independientes más expuestos a pérdida de visibilidad e ingresos; y en el \textbf{riesgo de fraude}, al reforzar incentivos para inflar reproducciones y usar redes de \textit{bot playlists}.
+
+Como cierre del análisis social, se recomienda evaluar transparencia del sistema de recomendación, auditabilidad del cálculo de royalties, etiquetado de contenidos sintéticos o automatizados y criterios públicos para inserción en playlists de alto impacto.
+
+\section{Conclusiones}
+El argumento desarrollado permite concluir que el conflicto ético de Spotify no se explica solo por eficiencia económica ni por un simple debate entre \textit{pro-rata} y \textit{user-centric}. El punto decisivo es que, bajo \textit{pro-rata}, quien controla la programación de la escucha puede influir simultáneamente en visibilidad e ingresos, afectando la justicia de la distribución.
+
+En este marco, la propuesta de Jakob de \textbf{Pesos Pro-Rata} resulta moralmente pertinente: reducir el peso de \textit{streams} programados, limitar el sesgo de playlists y devolver valor a la escucha activamente elegida. Según su planteamiento, esto ayudaría a limitar el poder de plataforma, aumentar igualdad distributiva, reducir la presión por privilegiar contenido barato y desincentivar fraude y \textit{bot playlists}.
+
+En síntesis, una remuneración legítima en plataformas musicales debe integrar rendimiento técnico con gobernanza democrática del algoritmo: más transparencia en promoción, menos opacidad en criterios de playlist y un reparto sensible a cómo se produce la escucha.
+
+\end{document}

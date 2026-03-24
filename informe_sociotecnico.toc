@@ -1,0 +1,14 @@
+\contentsline {section}{\numberline {1}Introducción}{2}{section.1}%
+\contentsline {section}{\numberline {2}Descripción técnica}{2}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Contexto del sistema}{2}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Arquitectura y componentes}{2}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Requerimientos y limitaciones}{2}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Modelo de remuneración pro-rata}{3}{subsection.2.4}%
+\contentsline {section}{\numberline {3}Análisis social}{3}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Actores involucrados}{3}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Problema ético central}{3}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Premisa normativa (en desarrollo)}{3}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Premisas fácticas (base empírica)}{4}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}Impactos y riesgos sociotécnicos}{4}{subsection.3.5}%
+\contentsline {subsection}{\numberline {3.6}Consideraciones éticas y normativas}{5}{subsection.3.6}%
+\contentsline {section}{\numberline {4}Conclusiones}{5}{section.4}%
