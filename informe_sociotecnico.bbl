@@ -1,0 +1,79 @@
+\begin{thebibliography}{}
+
+\bibitem [\protect \citeauthoryear {%
+Gierens%
+}{%
+Gierens%
+}{%
+{\protect \APACyear {2026}}%
+}]{%
+gierens2026weighted}
+\APACinsertmetastar {%
+gierens2026weighted}%
+\begin{APACrefauthors}%
+Gierens, J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2026}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Weighted Pro-Rata: Exploration of a Promising New Music Streaming Remuneration System} {Weighted pro-rata: Exploration of a promising new music streaming remuneration system}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{SSRN Electronic Journal}{}{}{}.
+\newblock
+\begin{APACrefURL} \url{https://ssrn.com/abstract=6068586} \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.2139/ssrn.6068586} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Lei%
+}{%
+Lei%
+}{%
+{\protect \APACyear {2023}}%
+}]{%
+LEI2023111111}
+\APACinsertmetastar {%
+LEI2023111111}%
+\begin{APACrefauthors}%
+Lei, X.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2023}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Pro-rata vs User-centric in the music streaming industry} {Pro-rata vs user-centric in the music streaming industry}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Economics Letters}{226}{}{111111}.
+\newblock
+\begin{APACrefURL} \url{https://www.sciencedirect.com/science/article/pii/S0165176523001362} \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{https://doi.org/10.1016/j.econlet.2023.111111} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Pelly%
+}{%
+Pelly%
+}{%
+{\protect \APACyear {2025}}%
+}]{%
+pelly2025mood}
+\APACinsertmetastar {%
+pelly2025mood}%
+\begin{APACrefauthors}%
+Pelly, L.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2025}.
+\newblock
+\APACrefbtitle {Mood Machine: The Rise of Spotify and the Costs of the Perfect Playlist} {Mood machine: The rise of spotify and the costs of the perfect playlist}.
+\newblock
+\APACaddressPublisher{}{Atria/One Signal Publishers}.
+\newblock
+\begin{APACrefURL} \url{https://books.google.cl/books?id=qU0Z0QEACAAJ} \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\end{thebibliography}
