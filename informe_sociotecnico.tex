@@ -22,20 +22,20 @@
 \maketitle
 
 \section{Introducción}
-Este informe sociotécnico analiza el sistema de remuneración de Spotify como un problema moral de justicia distributiva en plataformas digitales. El foco está en la relación entre diseño técnico (modelo \textit{pro-rata}, playlists y recomendación algorítmica) y sus consecuencias sociales sobre visibilidad, ingresos y poder dentro del ecosistema musical.
+En este informe se analizará el sistema de remuneración de Spotify como un problema moral de justicia distributiva. Se discutirá sobre el diseño de la plataforma (modelo \textit{pro-rata}, playlists y recomendación algorítmica) y sus consecuencias sociales sobre visibilidad, ingresos y poder de sus artistas.
 
-La tesis central es que el conflicto no se reduce a una discusión de eficiencia económica, sino que involucra una pregunta normativa: \textit{qué forma de distribución respeta mejor el valor que los usuarios realmente entregan a la música y limita el poder discrecional de la plataforma}.
+Notaremos que el conflicto no se reduce a una discusión de eficiencia económica, sino que involucra la siguiente pregunta: \textit{qué forma de distribución respeta mejor el valor que los usuarios realmente entregan a la música y limita el poder discrecional de la plataforma}.
 
 \section{Descripción técnica}
-El sistema analizado corresponde a la plataforma de \textit{streaming} Spotify, cuyo propósito técnico-comercial es distribuir música digital a gran escala y monetizarla a través de suscripciones y publicidad.
+Se analizará la plataforma de \textit{streaming} Spotify, cuyo propósito comercial es distribuir música digital a gran escala y monetizarla a través de suscripciones y publicidad.
 
-En términos de arquitectura y componentes, la solución se compone, de manera simplificada, de tres capas. Primero, la \textbf{captura de consumo}, que registra reproducciones (\textit{streams}) por pista, artista, playlist y tipo de interacción. Segundo, el \textbf{motor de recomendación y playlists}, integrado por sistemas algorítmicos y curatoriales que ordenan visibilidad y tráfico. Tercero, el \textbf{módulo de liquidación}, encargado del cálculo y distribución de royalties según reglas contractuales y modelo de reparto.
+El flujo general del sistema se compone de:
 
-A nivel funcional, el flujo general considera: captura de escucha, agregación de datos, priorización de contenidos en interfaces (por ejemplo, playlists) y posterior cálculo de pagos.
+- La \textbf{captura de consumo}, que registra reproducciones (\textit{streams}) por pista, artista y playlists.
+- El \textbf{motor de recomendación y playlists}, integrado por sistemas algorítmicos y curatoriales que ordenan visibilidad y tráfico de reproducciones.
+- El \textbf{módulo de liquidación}, que realiza el cálculo y distribución de pagos (\textit{royalties}) según reglas de contrato y modelo de reparto \cite{spotify_royalties_guide}.
 
-Respecto de requerimientos y limitaciones, en términos funcionales el sistema requiere trazabilidad de reproducciones, cálculo reproducible de pagos y mecanismos de auditoría. En términos no funcionales, exige escalabilidad, disponibilidad, seguridad de datos, transparencia y explicabilidad de la recomendación. Al mismo tiempo, enfrenta limitaciones técnicas y de diseño, entre ellas la opacidad algorítmica, la asimetría de información entre plataforma y artistas, y los incentivos a optimizar costo por reproducción.
-
-Finalmente, en el modelo de remuneración \textit{pro-rata}, los ingresos por suscripciones se agregan a una bolsa común y luego se distribuyen proporcionalmente al total de \textit{streams} de cada artista, como explica \citeA{LEI2023111111}. En términos simplificados, si $S_i$ son los \textit{streams} del artista $i$ y $\sum_j S_j$ es el total de reproducciones, entonces su fracción de pago es:
+En el modelo de remuneración \textit{pro-rata}, los ingresos por suscripciones se agregan a una bolsa común y luego se distribuyen proporcionalmente al total de \textit{streams} de cada artista, como explica \citeA{LEI2023111111}. En términos simplificados, si $S_i$ son los \textit{streams} del artista $i$ y $\sum_j S_j$ es el total de reproducciones (de toda la plataforma), entonces la fracción de pago para el artista es:
 
 $$
 \mathrm{Pago}_i \propto \frac{S_i}{\sum_j S_j}
