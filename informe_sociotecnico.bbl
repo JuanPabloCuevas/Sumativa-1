@@ -76,4 +76,28 @@ Pelly, L.%
 \begin{APACrefURL} \url{https://books.google.cl/books?id=qU0Z0QEACAAJ} \end{APACrefURL}
 \PrintBackRefs{\CurrentBib}
 
+\bibitem [\protect \citeauthoryear {%
+{Spotify}%
+}{%
+{Spotify}%
+}{%
+{\protect \APACyear {{\protect \bibnodate {}}}}%
+}]{%
+spotify_royalties_guide}
+\APACinsertmetastar {%
+spotify_royalties_guide}%
+\begin{APACrefauthors}%
+{Spotify}.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{{\protect \bibnodate {}}}{}{}.
+\newblock
+\APACrefbtitle {Royalties Guide.} {Royalties guide.}
+\newblock
+\begin{APACrefURL} \url{https://artists.spotify.com/royalties-guide} \end{APACrefURL}
+\newblock
+\APACrefnote{Accessed: 2026-03-24}
+\PrintBackRefs{\CurrentBib}
+
 \end{thebibliography}

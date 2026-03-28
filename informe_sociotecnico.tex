@@ -9,6 +9,8 @@
 \usepackage{parskip}
 \usepackage{hyperref}
 \usepackage{apacite}
+\usepackage{graphicx}
+\usepackage{float}
 
 % --- Configuración de página ---
 \geometry{margin=2.5cm}
@@ -16,6 +18,7 @@
 
 \csname title\endcsname{Sumativa 1}
 \author{Juan Pablo Cuevas\\Ética para Ciencia de Datos y Estadística}
+\date{Marzo 2026}
 
 \begin{document}
 
@@ -24,7 +27,7 @@
 \section{Introducción}
 En este informe se analizará el sistema de remuneración de Spotify como un problema moral de justicia distributiva. Se discutirá sobre el diseño de la plataforma (modelo \textit{pro-rata}, playlists y recomendación algorítmica) y sus consecuencias sociales sobre visibilidad, ingresos y poder de sus artistas.
 
-Notaremos que el conflicto no se reduce a una discusión de eficiencia económica, sino que involucra la siguiente pregunta: \textit{qué forma de distribución respeta mejor el valor que los usuarios realmente entregan a la música y limita el poder discrecional de la plataforma}.
+Notaremos que el conflicto no se reduce a una discusión de eficiencia económica, sino que involucra la siguiente pregunta: ¿Qué forma de distribución respeta mejor el valor que los usuarios realmente entregan a la música y limita el poder discrecional de la plataforma? 
 
 \section{Descripción técnica}
 Se analizará la plataforma de \textit{streaming} Spotify, cuyo propósito comercial es distribuir música digital a gran escala y monetizarla a través de suscripciones y publicidad.
@@ -32,7 +35,9 @@ Se analizará la plataforma de \textit{streaming} Spotify, cuyo propósito comer
 El flujo general del sistema se compone de:
 
 - La \textbf{captura de consumo}, que registra reproducciones (\textit{streams}) por pista, artista y playlists.
+
 - El \textbf{motor de recomendación y playlists}, integrado por sistemas algorítmicos y curatoriales que ordenan visibilidad y tráfico de reproducciones.
+
 - El \textbf{módulo de liquidación}, que realiza el cálculo y distribución de pagos (\textit{royalties}) según reglas de contrato y modelo de reparto \cite{spotify_royalties_guide}.
 
 En el modelo de remuneración \textit{pro-rata}, los ingresos por suscripciones se agregan a una bolsa común y luego se distribuyen proporcionalmente al total de \textit{streams} de cada artista, como explica \citeA{LEI2023111111}. Es decir, si $S_i$ son los \textit{streams} del artista $i$ y $\sum_j S_j$ es el total de reproducciones (de toda la plataforma), entonces la fracción de pago para el artista es:
@@ -44,27 +49,38 @@ $$
 \section{Análisis social}
 En el esquema \textit{pro-rata}, descrito por \citeA{LEI2023111111}, todas las suscripciones se agregan a una bolsa común, Spotify retiene una parte considerable y el resto se reparte según la proporción total de \textit{streams} de cada artista \cite{spotify_royalties_guide}. \citeA{gierens2026weighted} describe este mecanismo como una ``lucha por la cuota de mercado'', pues la remuneración ya no depende del nivel absoluto de ventas o reproducciones de cada artista, sino de su posición relativa frente al total de música reproducida.
 
-Según lo descrito por \citeA{pelly2025mood} en su libro \textit{Mood Machine}, a medidados de los 2010's, Spotify habría pagado alrededor del 70\% de sus ingresos en royalties para artistas y sellos discográficos, pero esto habría generado problemas de rentabilidad. Como gran parte de la audiencia utiliza la aplicación como ``soundtrack de la vida'' (para estudiar, trabajar, dormir o relajarse), la escucha pasiva se volvió el negocio. Ante esta situación Spotify se realizó la siguiente pregunta: ¿Por qué pagar royalties altos cuando el usuario presta poca atención a lo que escucha?. Desde ahí se expande el \textit{Perfect Fit Content} (PFC), música diseñada para encajar en playlists programadas, y de esta práctica aparecen \textit{ghost artists} sin identidad real fuera de la plataforma, sin descripción en sus perfiles, sin redes sociales y orientados a la producción masiva de música genérica (\textit{lofi}, \textit{ambient}, \textit{piano}).
+Según lo descrito por \citeA{pelly2025mood} en su libro \textit{Mood Machine}, a medidados de los 2010's, Spotify habría pagado alrededor del 70\% de sus ingresos en royalties para artistas y sellos discográficos, pero esto habría generado problemas de rentabilidad. Como gran parte de la audiencia utiliza la aplicación como ``soundtrack de la vida'' (para estudiar, trabajar, dormir o relajarse), la escucha pasiva se volvió el negocio. Ante esta situación Spotify se realizó la siguiente pregunta: ¿Por qué pagar royalties altos cuando el usuario presta poca atención a lo que escucha?. Desde ahí se expande el \textit{Perfect Fit Content} (PFC), música diseñada para encajar en playlists programadas, y de esta práctica aparecen \textit{ghost artists} sin identidad real fuera de la plataforma, sin descripción en sus perfiles, sin redes sociales y orientados a la producción masiva de música genérica (\textit{lofi}, \textit{ambient}, \textit{piano}). \citeA{pelly2025mood} sugiere que este modelo no solo responde a incentivos económicos, sino que también transforma la experiencia de consumo musical y cómo los artistas producen contenido dentro de la plataforma.
 
-(grafica)
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\textwidth]{StopFightingArtist.png}
+	\caption{Union of Musicians and Allied Workers, March 2021 (Alberto Ortega/Europa Press via Getty Images)}
+	\label{fig:stop-fighting-artist}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\textwidth]{impacto_ghost_artists.png}
+	\caption{El impacto de los ghost artists}
+	\label{fig:impacto-ghost-artists}
+\end{figure}
 
 En ese contexto aparece el siguiente problema ético: si la plataforma puede empujar ciertos contenidos, entonces también puede alterar la distribución de ingresos del sistema completo. \citeA{gierens2026weighted} sostiene que aumentar artificialmente los \textit{streams} de algunos artistas reduce el pago de los demás. Esta preocupación se vuelve más fuerte al considerar que, según su análisis, cerca del 40\% de los \textit{streams} de Spotify provienen de fuentes programadas por la propia plataforma. Además, solo un número limitado de canciones entra en playlists de alto alcance, y los criterios que definen esa promoción lo deciden fuerzas desconocidas basándose en factores en gran medida desconocidos.
 
-Normativamente, el punto clave es que un sistema de remuneración es más justo cuando refleja mejor el valor que las personas entregan realmente a la música. Ese valor no depende solo del número bruto de reproducciones, sino también del tipo de escucha: no equivale una elección activa de artista a una reproducción pasiva programada. Si ambas se tratan igual, el modelo tiende a sobre-premiar la circulación automatizada y a sub-reconocer la preferencia deliberada.
+Ante esta situación, se propone el sistema de remuneración \textit{user-centric} donde el calculo de los royalties no depende solo del número total de reproducciones, sino también del tipo de escucha, en este caso, no equivale una escucha activa del artista a una reproducción pasiva.
 
-Una objeción importante es que reemplazar \textit{pro-rata} por \textit{user-centric} no resolvería automáticamente el problema. De hecho, \citeA{LEI2023111111} argumenta que \textit{pro-rata} puede superar a \textit{user-centric} en eficiencia y en ciertos criterios de equidad igualitaria, y que el cambio podría ampliar brechas o reducir eficiencia. Esta objeción no derriba la tesis moral; al contrario, la afina: el problema principal no es solo la fórmula de reparto, sino la combinación entre fórmula y poder de programación de la plataforma.
+Aunque expertos mencionan que reemplazar \textit{pro-rata} por \textit{user-centric} no resolvería automáticamente el problema. De hecho, \citeA{LEI2023111111} argumenta que \textit{pro-rata} puede superar a \textit{user-centric} en eficiencia y en ciertos criterios de equidad, ya que bajo \textit{pro-rata} los artistas compiten por la totalidad de las reproducciones, lo que genera mayores incentivos a mejorar la calidad de sus canciones. Por otro lado, el modelo \textit{user-centric} limita la competencia al círculo de fans de cada artista, reduciendo dichos incentivos. En este sentido, el cambio de modelo podría incluso ampliar brechas o disminuir la eficiencia del sistema. Esta situación no derriba el problema moral, al contrario, lo afina, pues el problema principal no es solo el modelo de reparto, sino la combinación entre la fórmula y poder de programación de la plataforma.
 
-Los principales impactos y riesgos sociotécnicos se manifiestan en la \textbf{concentración de poder}, ya que la plataforma influye simultáneamente en descubrimiento musical y reparto económico; en el \textbf{desplazamiento cultural}, porque se favorece música optimizada para permanencia en playlists por sobre propuestas autorales; en un \textbf{sesgo estructural} que deja a artistas independientes más expuestos a pérdida de visibilidad e ingresos; y en el \textbf{riesgo de fraude}, al reforzar incentivos para inflar reproducciones y usar redes de \textit{bot playlists}.
-
-En este marco, la propuesta de Jakob de \textbf{Pesos Pro-Rata} resulta moralmente pertinente: reducir el peso de \textit{streams} programados, limitar el sesgo de playlists y devolver valor a la escucha activamente elegida. Según su planteamiento, esto ayudaría a limitar el poder de plataforma, aumentar igualdad distributiva, reducir la presión por privilegiar contenido barato y desincentivar fraude y \textit{bot playlists}, tal como sostiene \citeA{gierens2026weighted}.
-
-Como cierre del análisis social, se recomienda evaluar transparencia del sistema de recomendación, auditabilidad del cálculo de royalties, etiquetado de contenidos sintéticos o automatizados y criterios públicos para inserción en playlists de alto impacto.
+Ante esta situación, \citeA{gierens2026weighted} propone un modelo de \textbf{Pesos Pro-Rata} que resulta moralmente pertinente, este reduce el peso de \textit{streams} programados, limita el sesgo de playlists y devuelve el valor a la escucha activa. Según su planteamiento, esto ayudaría a limitar el poder de la plataforma, aumentar la igualdad distributiva, reducir la presión por privilegiar contenido barato, desincentivar fraude y \textit{bot playlists}.
 
 \section{Conclusiones}
-El argumento desarrollado permite concluir que el conflicto ético de Spotify no se explica solo por eficiencia económica ni por un simple debate entre \textit{pro-rata} y \textit{user-centric}. El punto decisivo es que, bajo \textit{pro-rata}, quien controla la programación de la escucha puede influir simultáneamente en visibilidad e ingresos, afectando la justicia de la distribución.
+El análisis del sistema de remuneración de Spotify permite concluir que el problema ético no se explica solo el modelo de distribución \textit{pro-rata} y \textit{user-centric}, sino en la concentración de poder de la plataforma para programar y promover ciertos contenidos, lo que afecta la distribución de ingresos y visibilidad de los artistas.
 
+En este contexto, el diseño de la plataforma actual presenta riesgos relevantes como la opacidad en criterios algorítmicos, sesgos en la promición de contenidos, incentivos en la producción musical para encajar en playlists programadas (como el \textit{Perfect Fit Content}) y la aparición de \textit{ghost artists} sin identidad real fuera de la plataforma. Todo aquello no solo afectan la justicia distributiva, sino también la diversidad cultural y la experiencia de consumo musical.
 
-En síntesis, una remuneración legítima en plataformas musicales debe integrar rendimiento técnico con gobernanza democrática del algoritmo: más transparencia en promoción, menos opacidad en criterios de playlist y un reparto sensible a cómo se produce la escucha.
+Para mejorar el diseño y gobernanza del sistema de Spotify, es necesario avanzar hacia una mayor transparencia algorítmica, estableciendo criterios claros sobre la recomendación y selección de contenidos. Además, se deben evaluar modelos de remuneración alternativos, como el \textbf{Pesos Pro-Rata}, que reduzcan el peso de los \textit{streams} programados y devuelvan valor a la escucha activa, limitando así el poder discrecional de la plataforma y promoviendo una distribución más justa de ingresos entre los artistas. También es importante identificar los contenidos generados artificialmente (asociados a \textit{ghost artists}) para evitar distorsiones, y fomentar la participación de los artistas y usuarios en la gobernanza de la plataforma, para asegurar que sus intereses y valores sean considerados en el diseño del sistema.
+
+\newpage
 
 \bibliographystyle{apacite}
 \bibliography{referencias}
