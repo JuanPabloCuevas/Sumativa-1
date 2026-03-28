@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex informe_sociotecnico"] 1774714481.33739 "informe_sociotecnico.aux" "informe_sociotecnico.bbl" "informe_sociotecnico" 1774714698.93194 0
+["bibtex informe_sociotecnico"] 1774716709.95633 "informe_sociotecnico.aux" "informe_sociotecnico.bbl" "informe_sociotecnico" 1774716717.78665 0
   "./referencias.bib" 1774536292 1931 c359612515ba29e058bda439c7232f98 ""
   "c:/Users/pcjp2/AppData/Roaming/TinyTeX/texmf-dist/bibtex/bst/apacite/apacite.bst" 1774378128 141073 9d7b79dbf9d91133318126032cff8c27 ""
-  "informe_sociotecnico.aux" 1774714698 2321 1b40fea58b258248e3c8a903237ad0eb "pdflatex"
+  "informe_sociotecnico.aux" 1774716716 2321 aab82a7e1c354abba281f8b356fe1943 "pdflatex"
   (generated)
   "informe_sociotecnico.bbl"
   "informe_sociotecnico.blg"
   (rewritten before read)
-["pdflatex"] 1774714696.73407 "informe_sociotecnico.tex" "informe_sociotecnico.pdf" "informe_sociotecnico" 1774714698.93315 0
+["pdflatex"] 1774716710.32028 "informe_sociotecnico.tex" "informe_sociotecnico.pdf" "informe_sociotecnico" 1774716717.79328 0
   "StopFightingArtist.png" 1774714220 1156132 b7b33f02b5e908129d77226da35abae0 ""
   "c:/Users/pcjp2/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc" 1747025924 2375 baa924870cfb487815765f9094cf3728 ""
   "c:/Users/pcjp2/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc" 1747025924 3486 c7eadf5dcc57b3b2d11736679f6636ba ""
@@ -101,10 +101,10 @@
   "c:/Users/pcjp2/AppData/Roaming/TinyTeX/texmf-var/web2c/pdftex/pdflatex.fmt" 1765580424 2248604 c1877bb9d9da65227e498722b9f18035 ""
   "c:/Users/pcjp2/AppData/Roaming/TinyTeX/texmf.cnf" 1747025990 956 dbeceba109d3f7dd659079c9ad6f4ec2 ""
   "impacto_ghost_artists.png" 1774667100 502966 4947cf6f58782140b4fd53f188cb9757 ""
-  "informe_sociotecnico.aux" 1774714698 2321 1b40fea58b258248e3c8a903237ad0eb "pdflatex"
-  "informe_sociotecnico.bbl" 1774714481 2684 e34374ed6799e08597dd33dc90b16f43 "bibtex informe_sociotecnico"
-  "informe_sociotecnico.out" 1774714698 574 052b082326bcf6563a00655018b1e720 "pdflatex"
-  "informe_sociotecnico.tex" 1774714621 8615 3575014e111cf4b744b38fda8217a24d ""
+  "informe_sociotecnico.aux" 1774716716 2321 aab82a7e1c354abba281f8b356fe1943 "pdflatex"
+  "informe_sociotecnico.bbl" 1774716710 2684 e34374ed6799e08597dd33dc90b16f43 "bibtex informe_sociotecnico"
+  "informe_sociotecnico.out" 1774716716 574 052b082326bcf6563a00655018b1e720 "pdflatex"
+  "informe_sociotecnico.tex" 1774716703 8807 42ffe91ead0b3822d7ffdba7f4ad9abe ""
   (generated)
   "informe_sociotecnico.aux"
   "informe_sociotecnico.log"
