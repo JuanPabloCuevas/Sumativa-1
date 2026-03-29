@@ -27,6 +27,30 @@ Gierens, J.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+{Insight Out Promotion}%
+}{%
+{Insight Out Promotion}%
+}{%
+{\protect \APACyear {2024}}%
+}]{%
+fake_artists_spotify_2024}
+\APACinsertmetastar {%
+fake_artists_spotify_2024}%
+\begin{APACrefauthors}%
+{Insight Out Promotion}.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2024}{}{}.
+\newblock
+\APACrefbtitle {The Impact of Fake Artists on Spotify: A Deep Dive.} {The impact of fake artists on spotify: A deep dive.}
+\newblock
+\begin{APACrefURL} \url{https://insightoutpromotion.com/2024/04/27/the-impact-of-fake-artists-on-spotify-a-deep-dive/} \end{APACrefURL}
+\newblock
+\APACrefnote{Accessed: 2026-03-26}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Lei%
 }{%
 Lei%

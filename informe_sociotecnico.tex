@@ -34,17 +34,17 @@ Se analizará la plataforma de \textit{streaming} Spotify, cuyo propósito comer
 
 El flujo general del sistema se compone de:
 
-- La \textbf{captura de consumo}, que registra reproducciones (\textit{streams}) por pista, artista y playlists.
+\begin{itemize}
+    \item La captura de consumo, que registra reproducciones (\textit{streams}) por pista, artista y playlists.
 
-- El \textbf{motor de recomendación y playlists}, integrado por sistemas algorítmicos y curatoriales que ordenan visibilidad y tráfico de reproducciones.
+    \item El motor de recomendación y playlists, integrado por sistemas algorítmicos y curatoriales que ordenan visibilidad y tráfico de reproducciones.
 
-- El \textbf{módulo de liquidación}, que realiza el cálculo y distribución de pagos (\textit{royalties}) según reglas de contrato y modelo de reparto \cite{spotify_royalties_guide}.
+    \item El modelo de remuneración \textit{pro-rata}, donde los ingresos por suscripciones se agregan a una bolsa común y luego se distribuyen proporcionalmente al total de \textit{streams} de cada artista, como explica \citeA{LEI2023111111}. Es decir, si $S_i$ son los \textit{streams} del artista $i$ y $\sum_j S_j$ es el total de reproducciones (de toda la plataforma), entonces la fracción de pago para el artista es:
+    $$
+    \mathrm{Pago}_i \propto \frac{S_i}{\sum_j S_j}
+    $$
 
-En el modelo de remuneración \textit{pro-rata}, los ingresos por suscripciones se agregan a una bolsa común y luego se distribuyen proporcionalmente al total de \textit{streams} de cada artista, como explica \citeA{LEI2023111111}. Es decir, si $S_i$ son los \textit{streams} del artista $i$ y $\sum_j S_j$ es el total de reproducciones (de toda la plataforma), entonces la fracción de pago para el artista es:
-
-$$
-\mathrm{Pago}_i \propto \frac{S_i}{\sum_j S_j}
-$$
+\end{itemize}
 
 \section{Análisis social}
 En el esquema \textit{pro-rata}, descrito por \citeA{LEI2023111111}, todas las suscripciones se agregan a una bolsa común, Spotify retiene una parte considerable y el resto se reparte según la proporción total de \textit{streams} de cada artista \cite{spotify_royalties_guide}. \citeA{gierens2026weighted} describe este mecanismo como una ``lucha por la cuota de mercado'', pues la remuneración ya no depende del nivel absoluto de ventas o reproducciones de cada artista, sino de su posición relativa frente al total de música reproducida.
@@ -53,7 +53,7 @@ Según lo descrito por \citeA{pelly2025mood} en su libro \textit{Mood Machine}, 
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.7\textwidth]{StopFightingArtist.png}
+	\includegraphics[width=0.8\textwidth]{StopFightingArtist.png}
 	\caption{Union of Musicians and Allied Workers, March 2021 (Alberto Ortega/Europa Press via Getty Images)}
 	\label{fig:stop-fighting-artist}
 \end{figure}
@@ -64,6 +64,8 @@ Según lo descrito por \citeA{pelly2025mood} en su libro \textit{Mood Machine}, 
 	\caption{El impacto de los ghost artists}
 	\label{fig:impacto-ghost-artists}
 \end{figure}
+
+Fuente: \cite{fake_artists_spotify_2024}.
 
 En ese contexto aparece el siguiente problema ético: si la plataforma puede empujar ciertos contenidos, entonces también puede alterar la distribución de ingresos del sistema completo. \citeA{gierens2026weighted} sostiene que aumentar artificialmente los \textit{streams} de algunos artistas reduce el pago de los demás. Esta preocupación se vuelve más fuerte al considerar que, según su análisis, cerca del 40\% de los \textit{streams} de Spotify provienen de fuentes programadas por la propia plataforma. Además, solo un número limitado de canciones entra en playlists de alto alcance, y los criterios que definen esa promoción lo deciden fuerzas desconocidas basándose en factores en gran medida desconocidos.
 
@@ -84,5 +86,15 @@ Para mejorar el diseño y gobernanza del sistema de Spotify, es necesario avanza
 
 \bibliographystyle{apacite}
 \bibliography{referencias}
+
+Se utilizaron herramientas de inteligencias artificiales como GitHub Copilot y ChatGPT como apoyo en el desarrollo de este informe.
+
+\begin{itemize}
+	\item GitHub Copilot se utilizó para generar código en LaTeX, especialmente para la estructura del documento, formato de citas y referencias bibliográficas.
+
+	\item ChatGPT se utilizó para búsqueda orientativa de información y apoyo en la redacción de algunos párrafos.
+\end{itemize}
+
+La información presentada fue basada en fuentes académicas y adaptadas al análisis propio. Evidencia: \url{https://uccl0-my.sharepoint.com/:b:/g/personal/juanp_cuevas_uc_cl/IQAWI6xflvwmQq0o5zJ99Y1GAVtfjEymtdpVMVOm2LLg8Vw?e=ue04jU}
 
 \end{document}

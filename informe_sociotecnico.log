@@ -1,6 +1,7 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.12.12)  28 MAR 2026 13:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.12.12)  29 MAR 2026 15:53
 entering extended mode
  restricted \write18 enabled.
+ file:line:error style messages enabled.
  %&-line parsing enabled.
 **informe_sociotecnico.tex
 (./informe_sociotecnico.tex
@@ -317,26 +318,30 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10> on input line 26.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <7> on input line 26.
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 38.
+ (c:/Users/pcjp2/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/ts1lmr.fd
+File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 43.
+(Font)              <12> on input line 42.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 43.
+(Font)              <8> on input line 42.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 43.
+(Font)              <6> on input line 42.
  [1
 
-{c:/Users/pcjp2/AppData/Roaming/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/Users/pcjp2/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{c:/Users/pcjp2/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{c:/Users/pcjp2/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}]
+{c:/Users/pcjp2/AppData/Roaming/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/Users/pcjp2/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{c:/Users/pcjp2/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{c:/Users/pcjp2/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{c:/Users/pcjp2/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{c:/Users/pcjp2/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{c:/Users/pcjp2/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}]
 <StopFightingArtist.png, id=52, 1927.2pt x 963.6pt>
 File: StopFightingArtist.png Graphic file (type png)
 <use StopFightingArtist.png>
 Package pdftex.def Info: StopFightingArtist.png  used on input line 56.
-(pdftex.def)             Requested size: 318.66948pt x 159.32532pt.
+(pdftex.def)             Requested size: 364.19667pt x 182.08607pt.
 <impacto_ghost_artists.png, id=53, 813.0375pt x 1016.29688pt>
 File: impacto_ghost_artists.png Graphic file (type png)
 <use impacto_ghost_artists.png>
 Package pdftex.def Info: impacto_ghost_artists.png  used on input line 63.
 (pdftex.def)             Requested size: 227.62206pt x 284.51466pt.
- [2{c:/Users/pcjp2/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{c:/Users/pcjp2/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}
+ [2
 pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
@@ -345,7 +350,7 @@ l.67
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.73 
+l.75 
       <./impacto_ghost_artists.png (PNG copy)>] [4] (./informe_sociotecnico.bbl
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 24.
  (c:/Users/pcjp2/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/t1lmtt.fd
@@ -359,18 +364,18 @@ Package rerunfilecheck Info: File `informe_sociotecnico.out' has not changed.
 (rerunfilecheck)             Checksum: 052B082326BCF6563A00655018B1E720;574.
  ) 
 Here is how much of TeX's memory you used:
- 9643 strings out of 469501
- 152231 string characters out of 5467320
- 564868 words of memory out of 5000000
- 38152 multiletter control sequences out of 15000+600000
- 673226 words of font info for 69 fonts, out of 8000000 for 9000
+ 9684 strings out of 469501
+ 153327 string characters out of 5467320
+ 566997 words of memory out of 5000000
+ 38187 multiletter control sequences out of 15000+600000
+ 673601 words of font info for 70 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 69i,6n,79p,1239b,440s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 69i,6n,79p,1239b,441s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/Users/pcjp2/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/Users/pcjp2/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmex10.pfb><c:/Users/pcjp2/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi12.pfb><c:/Users/pcjp2/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi8.pfb><c:/Users/pcjp2/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/Users/pcjp2/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr17.pfb><c:/Users/pcjp2/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri12.pfb><c:/Users/pcjp2/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/Users/pcjp2/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmtt12.pfb>
-Output written on informe_sociotecnico.pdf (5 pages, 2317697 bytes).
+Output written on informe_sociotecnico.pdf (5 pages, 2322369 bytes).
 PDF statistics:
- 143 PDF objects out of 1000 (max. 8388607)
- 113 compressed objects within 2 object streams
- 17 named destinations out of 1000 (max. 500000)
+ 152 PDF objects out of 1000 (max. 8388607)
+ 121 compressed objects within 2 object streams
+ 18 named destinations out of 1000 (max. 500000)
  51 words of extra memory for PDF output out of 10000 (max. 10000000)
 
