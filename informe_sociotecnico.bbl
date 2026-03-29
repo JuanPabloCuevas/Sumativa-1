@@ -124,4 +124,28 @@ spotify_royalties_guide}%
 \APACrefnote{Accessed: 2026-03-24}
 \PrintBackRefs{\CurrentBib}
 
+\bibitem [\protect \citeauthoryear {%
+{Union of Musicians and Allied Workers}%
+}{%
+{Union of Musicians and Allied Workers}%
+}{%
+{\protect \APACyear {2021}}%
+}]{%
+umaw_justice_spotify}
+\APACinsertmetastar {%
+umaw_justice_spotify}%
+\begin{APACrefauthors}%
+{Union of Musicians and Allied Workers}.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2021}{}{}.
+\newblock
+\APACrefbtitle {Justice at Spotify.} {Justice at spotify.}
+\newblock
+\begin{APACrefURL} \url{https://weareumaw.org/justice-at-spotify} \end{APACrefURL}
+\newblock
+\APACrefnote{Accessed: 2026-03-26}
+\PrintBackRefs{\CurrentBib}
+
 \end{thebibliography}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.12.12)  29 MAR 2026 17:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.12.12)  29 MAR 2026 17:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -364,18 +364,18 @@ Package rerunfilecheck Info: File `informe_sociotecnico.out' has not changed.
 (rerunfilecheck)             Checksum: 052B082326BCF6563A00655018B1E720;574.
  ) 
 Here is how much of TeX's memory you used:
- 9684 strings out of 469501
- 153327 string characters out of 5467320
- 566997 words of memory out of 5000000
- 38187 multiletter control sequences out of 15000+600000
+ 9688 strings out of 469501
+ 153421 string characters out of 5467320
+ 568190 words of memory out of 5000000
+ 38190 multiletter control sequences out of 15000+600000
  673601 words of font info for 70 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  69i,6n,79p,1239b,441s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/Users/pcjp2/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/Users/pcjp2/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmex10.pfb><c:/Users/pcjp2/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi12.pfb><c:/Users/pcjp2/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi8.pfb><c:/Users/pcjp2/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/Users/pcjp2/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr17.pfb><c:/Users/pcjp2/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri12.pfb><c:/Users/pcjp2/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/Users/pcjp2/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmtt12.pfb>
-Output written on informe_sociotecnico.pdf (5 pages, 2322612 bytes).
+Output written on informe_sociotecnico.pdf (5 pages, 2323024 bytes).
 PDF statistics:
- 153 PDF objects out of 1000 (max. 8388607)
- 122 compressed objects within 2 object streams
- 18 named destinations out of 1000 (max. 500000)
+ 160 PDF objects out of 1000 (max. 8388607)
+ 129 compressed objects within 2 object streams
+ 19 named destinations out of 1000 (max. 500000)
  51 words of extra memory for PDF output out of 10000 (max. 10000000)
 
